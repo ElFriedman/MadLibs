@@ -22,7 +22,7 @@ public class MadLibs {
 		BufferedReader br = new BufferedReader(fileName);
 		char c;
 		while(br.ready()) { 
-			c = br.read()
+			c = br.read();
 			if (c == '<') {
 				c = br.read();
 				c = "";
@@ -31,9 +31,27 @@ public class MadLibs {
 					s += c;
 					c = br.read();
 				}
-				
+				if (s == "NOUN") {
+					System.out.print(nouns.get((int)(Math.random() * nouns.size())));
+				}
+				if (s == "VERB") {
+					System.out.print(verbs.get((int)(Math.random() * verbs.size())));
+				}
+				if (s == "ADJECTIVES") {
+					System.out.print(adjective.get((int)(Math.random() * adjective.size())));
+				}
+				if (s == "ADVERBS") {
+					System.out.print(adverbs.get((int)(Math.random() * adverbs.size())));
+				}
+				else {
+					System.out.print("42");
+				}
+				c = br.read();
+			} else {
+				System.out.print(c);
 			}
 		}
+		br.close();
 		
 		
 	}
