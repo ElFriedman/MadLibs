@@ -7,6 +7,8 @@ public class MadLibs {
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
 		ArrayList<String> nouns = new ArrayList<String>(); //creates a nouns ArrayList
 		ArrayList<String> verbs = new ArrayList<String>();
+		ArrayList<String> adjectives = new ArrayList<String>();
+		ArrayList<String> adverbs = new ArrayList<String>();
 		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
