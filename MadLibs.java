@@ -1,4 +1,3 @@
-
 public class MadLibs {
 
 	public static void main(String[] args) {
@@ -15,7 +14,12 @@ public class MadLibs {
 		//5. Prompt user for the name of a file containing a MadLibs story.
 		// Read the story from that file and write it to System.out, but replacing each instance of
 		// <<NOUN>>, <<VERB>>, etc. with a randomly chosen word from the corresponding list.
-
+		
+		System.out.println("What is the name of the file containing the MadLibs story?");
+		String fileName = scanner.next();
+		
+		
+		
 	}
 
 }
