@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+
 public class MadLibs {
 
 	public static void main(String[] args) {
@@ -19,7 +21,19 @@ public class MadLibs {
 		String fileName = scanner.next();
 		BufferedReader br = new BufferedReader(fileName);
 		char c;
-		
+		while(br.ready()) { 
+			c = br.read()
+			if (c == '<') {
+				c = br.read();
+				c = "";
+				String s = "";
+				while (c != '>') {
+					s += c;
+					c = br.read();
+				}
+				
+			}
+		}
 		
 		
 	}
