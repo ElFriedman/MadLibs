@@ -2,6 +2,8 @@
 public class MadLibs {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
 		//0. Give variable names for each of the arraylists below and create Madlibs stories.
 		ArrayList<String> nouns = new ArrayList<String>(); //creates a nouns ArrayList
 		ArrayList<String> verbs = new ArrayList<String>();
