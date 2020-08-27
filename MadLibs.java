@@ -13,8 +13,6 @@ public class MadLibs {
 		ArrayList<String> adjectives = new ArrayList<String>();
 		ArrayList<String> adverbs = new ArrayList<String>();
 		
-		ArrayList<String> adjs = new ArrayList<String>();
-		
 		//1. Read a nouns.txt file and store its list of nouns into an arraylist.
 		
 		//2. Read a verbs.txt file and store its list of verbs into an arraylist.
@@ -23,7 +21,7 @@ public class MadLibs {
 		
 		BufferedReader br = new BufferedReader(new FileReader("adjectives.txt"));
  		while (br.ready()) {
- 			adj.add(br.readLine())
+ 			adjectives.add(br.readLine())
  		}
  		br.close();
 		
