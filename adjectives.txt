@@ -1,0 +1,8 @@
+Spicy
+Red
+Blue
+Green
+Yellow
+Large
+Small
+Medium
