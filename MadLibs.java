@@ -33,7 +33,7 @@ public class MadLibs {
 		
 		System.out.println("What is the name of the file containing the MadLibs story?");
 		String fileName = scanner.next();
-		BufferedReader br = new BufferedReader(fileName);
+		BufferedReader br = new BufferedReader(new FileReader(fileName));
 		char c;
 		while(br.ready()) { 
 			c = br.read();
